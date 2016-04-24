@@ -50,14 +50,14 @@ echo "<br>";
     <fieldset id="borderLane">
         <legend>Borderlane Settings:</legend>
         <select name="borderType">
-            <option value="dotted" selected="<?php print$borderType?>">dotted</option>
-            <option value="dashed" selected="<?php print$borderType?>">dashed</option>
-            <option value="solid" selected="<?php print$borderType?>">solid</option>
-            <option value="double" selected="<?php print$borderType?>">double</option>
-            <option value="groove" selected="<?php print$borderType?>">groove</option>
-            <option value="ridge" selected="<?php print$borderType?>">ridge</option>
-            <option value="inset" selected="<?php print$borderType?>">inset</option>
-            <option value="outset" selected="<?php print$borderType?>">outset</option>
+            <option value="dotted" <?php if ($borderType == "dotted") print 'selected'; ?> >dotted</option>
+            <option value="dashed" <?php if ($borderType == "dashed") print 'selected'; ?> >dashed</option>
+            <option value="solid" <?php if ($borderType == "solid") print 'selected'; ?> >solid</option>
+            <option value="double" <?php if ($borderType == "double") print 'selected'; ?> >double</option>
+            <option value="groove" <?php if ($borderType == "groove") print 'selected'; ?> >groove</option>
+            <option value="ridge" <?php if ($borderType == "ridge") print 'selected'; ?> >ridge</option>
+            <option value="inset" <?php if ($borderType == "inset") print 'selected'; ?> >inset</option>
+            <option value="outset" <?php if ($borderType == "outset") print 'selected'; ?> >outset</option>
         </select> Borderlane style<br><br>
         <input  type="number" class="numberInput" name="borderWeight" min="0" max="20" step="1" value="<?php print$borderWeight?>"> Borderlane weight (0 - 20 px) <br><br>
         <input  type="number" class="numberInput" name="borderRadius" max="100" step="1" value="<?php print$borderRadius?>"> Bordelane radius (0 - 100 px) <br><br>
