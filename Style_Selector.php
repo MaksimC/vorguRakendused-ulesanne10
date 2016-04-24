@@ -43,25 +43,25 @@ echo "<br>";
         <legend>Text Settings:</legend>
         <textarea name="userText" cols="20" rows="4"><?php print $userText?></textarea> <br><br>
         <input type="color" class="colorInput" name="textColor" value="<?php print$textColor?>"> Text Color <br><br>
-        <input type="color" class="colorInput" name="backColor" value="#80ffff"> Background color <br><br>
+        <input type="color" class="colorInput" name="backColor" value="<?php print$backColor?>"> Background color <br><br>
         <br><br>
     </fieldset> <br>
 
     <fieldset id="borderLane">
         <legend>Borderlane Settings:</legend>
         <select name="borderType">
-            <option value="dotted">dotted</option>
-            <option value="dashed">dashed</option>
-            <option value="solid">solid</option>
-            <option value="double">double</option>
-            <option value="groove">groove</option>
-            <option value="ridge">ridge</option>
-            <option value="inset">inset</option>
-            <option value="outset">outset</option>
+            <option value="dotted" selected="<?php print$borderType?>">dotted</option>
+            <option value="dashed" selected="<?php print$borderType?>">dashed</option>
+            <option value="solid" selected="<?php print$borderType?>">solid</option>
+            <option value="double" selected="<?php print$borderType?>">double</option>
+            <option value="groove" selected="<?php print$borderType?>">groove</option>
+            <option value="ridge" selected="<?php print$borderType?>">ridge</option>
+            <option value="inset" selected="<?php print$borderType?>">inset</option>
+            <option value="outset" selected="<?php print$borderType?>">outset</option>
         </select> Borderlane style<br><br>
-        <input  type="number" class="numberInput" name="borderWeight" value="5" min="0" max="20" step="1"> Borderlane weight (0 - 20 px) <br><br>
-        <input  type="number" class="numberInput" name="borderRadius" value="10" max="100" step="1"> Bordelane radius (0 - 100 px) <br><br>
-        <input  type="color" class="colorInput" name="borderColor" value="#000040"> Borderlane color <br><br>
+        <input  type="number" class="numberInput" name="borderWeight" min="0" max="20" step="1" value="<?php print$borderWeight?>"> Borderlane weight (0 - 20 px) <br><br>
+        <input  type="number" class="numberInput" name="borderRadius" max="100" step="1" value="<?php print$borderRadius?>"> Bordelane radius (0 - 100 px) <br><br>
+        <input  type="color" class="colorInput" name="borderColor" value="<?php print$borderColor?>"> Borderlane color <br><br>
     </fieldset> <br>
 
     <input type="submit" id="button" value="Submit">
