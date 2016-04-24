@@ -2,6 +2,7 @@
     <h3>Sa oled juba üks kord oma valiku teinud! Rohkem kui 1 korda valida ei saa!</h3>
         <p>Ennem oled valinut sellist ilusa pildi: <br/>
         <img src="<?php echo $pildid[$id]['src'];?>" alt="väljavalitu"/></p>
+        <a href="?page=galerii">Tagasi Galeriisse</a>
 <?php else: ?>
         <h3>Sellist pilti ei eksisteeri, palun tee uus <a href="?page=vote">valik</a>.</h3>
 <?php endif; ?>
